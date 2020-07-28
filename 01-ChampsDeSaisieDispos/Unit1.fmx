@@ -1,0 +1,375 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 615
+  ClientWidth = 645
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object VertScrollBox1: TVertScrollBox
+    Align = Client
+    Size.Width = 645.000000000000000000
+    Size.Height = 615.000000000000000000
+    Size.PlatformDefault = False
+    Viewport.Width = 645.000000000000000000
+    Viewport.Height = 615.000000000000000000
+    object TabControl1: TTabControl
+      Align = Top
+      Size.Width = 645.000000000000000000
+      Size.Height = 553.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 1
+      TabPosition = Top
+      Sizes = (
+        645s
+        527s
+        645s
+        527s
+        645s
+        527s
+        645s
+        527s)
+      object TabItem1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Padding.Left = 10.000000000000000000
+        Padding.Top = 10.000000000000000000
+        Padding.Right = 10.000000000000000000
+        Padding.Bottom = 10.000000000000000000
+        Size.Width = 89.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Date / Heure'
+        object DateEdit1: TDateEdit
+          Date = 44040.000000000000000000
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 625.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object TimeEdit1: TTimeEdit
+          Time = 0.415355567129629600
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 625.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object TabItem2: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Padding.Left = 10.000000000000000000
+        Padding.Top = 10.000000000000000000
+        Padding.Right = 10.000000000000000000
+        Padding.Bottom = 10.000000000000000000
+        Size.Width = 59.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Combo'
+        object ComboEdit1: TComboEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          ItemHeight = 19.000000000000000000
+          Items.Strings = (
+            'orange'
+            'pomme'
+            'poire'
+            'mangue'
+            'carotte'
+            'citron'
+            'tomate'
+            'raison'
+            'cerise'
+            'moutarde')
+          ItemIndex = -1
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 625.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object GroupBox5: TGroupBox
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 42.000000000000000000
+          Size.Width = 625.000000000000000000
+          Size.Height = 150.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'KeyboardType'
+          object lbKeyboardTypeCombo: TListBox
+            Align = Client
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 20.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 605.000000000000000000
+            Size.Height = 120.000000000000000000
+            Size.PlatformDefault = False
+            DisableFocusEffect = True
+            DefaultItemStyles.ItemStyle = ''
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            OnItemClick = lbKeyboardTypeComboItemClick
+            Viewport.Width = 601.000000000000000000
+            Viewport.Height = 116.000000000000000000
+          end
+        end
+        object GroupBox6: TGroupBox
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 202.000000000000000000
+          Size.Width = 625.000000000000000000
+          Size.Height = 150.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'KillFocusByReturn'
+          object lbKillFocusByReturnCombo: TListBox
+            Align = Client
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 20.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 605.000000000000000000
+            Size.Height = 120.000000000000000000
+            Size.PlatformDefault = False
+            DisableFocusEffect = True
+            Items.Strings = (
+              'False'
+              'True')
+            DefaultItemStyles.ItemStyle = ''
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            OnItemClick = lbKillFocusByReturnComboItemClick
+            Viewport.Width = 601.000000000000000000
+            Viewport.Height = 116.000000000000000000
+          end
+        end
+      end
+      object TabItem3: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Padding.Left = 10.000000000000000000
+        Padding.Top = 10.000000000000000000
+        Padding.Right = 10.000000000000000000
+        Padding.Bottom = 10.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Edit'
+        object Edit1: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 60.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 575.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          object Button1: TButton
+            Align = Right
+            Margins.Right = -50.000000000000000000
+            Position.X = 581.000000000000000000
+            Size.Width = 44.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object GroupBox1: TGroupBox
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 42.000000000000000000
+          Size.Width = 625.000000000000000000
+          Size.Height = 150.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'KeyboardType'
+          object lbKeyboardTypeEdit: TListBox
+            Align = Client
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 20.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 605.000000000000000000
+            Size.Height = 120.000000000000000000
+            Size.PlatformDefault = False
+            DisableFocusEffect = True
+            DefaultItemStyles.ItemStyle = ''
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            OnItemClick = lbKeyboardTypeEditItemClick
+            Viewport.Width = 601.000000000000000000
+            Viewport.Height = 116.000000000000000000
+          end
+        end
+        object GroupBox2: TGroupBox
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 202.000000000000000000
+          Size.Width = 625.000000000000000000
+          Size.Height = 150.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'KillFocusByReturn'
+          object lbKillFocusByReturnEdit: TListBox
+            Align = Client
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 20.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 605.000000000000000000
+            Size.Height = 120.000000000000000000
+            Size.PlatformDefault = False
+            DisableFocusEffect = True
+            Items.Strings = (
+              'False'
+              'True')
+            DefaultItemStyles.ItemStyle = ''
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            OnItemClick = lbKillFocusByReturnEditItemClick
+            Viewport.Width = 601.000000000000000000
+            Viewport.Height = 116.000000000000000000
+          end
+        end
+        object GroupBox3: TGroupBox
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 362.000000000000000000
+          Size.Width = 625.000000000000000000
+          Size.Height = 150.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'ReturnKeyType'
+          object lbReturnKeyTypeEdit: TListBox
+            Align = Client
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 20.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 605.000000000000000000
+            Size.Height = 120.000000000000000000
+            Size.PlatformDefault = False
+            DisableFocusEffect = True
+            DefaultItemStyles.ItemStyle = ''
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            OnItemClick = lbReturnKeyTypeEditItemClick
+            Viewport.Width = 601.000000000000000000
+            Viewport.Height = 116.000000000000000000
+          end
+        end
+      end
+      object TabItem4: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Padding.Left = 10.000000000000000000
+        Padding.Top = 10.000000000000000000
+        Padding.Right = 10.000000000000000000
+        Padding.Bottom = 10.000000000000000000
+        Size.Width = 55.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Memo'
+        object Memo1: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 625.000000000000000000
+          Size.Height = 135.000000000000000000
+          Size.PlatformDefault = False
+          Viewport.Width = 621.000000000000000000
+          Viewport.Height = 131.000000000000000000
+          object Button2: TButton
+            Align = Right
+            Position.X = 577.000000000000000000
+            Size.Width = 44.000000000000000000
+            Size.Height = 131.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object GroupBox4: TGroupBox
+          Align = Client
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 625.000000000000000000
+          Size.Height = 362.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'KeyboardType'
+          object lbKeyboardTypeMemo: TListBox
+            Align = Client
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 20.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 605.000000000000000000
+            Size.Height = 332.000000000000000000
+            Size.PlatformDefault = False
+            DisableFocusEffect = True
+            DefaultItemStyles.ItemStyle = ''
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            OnItemClick = lbKeyboardTypeMemoItemClick
+            Viewport.Width = 601.000000000000000000
+            Viewport.Height = 328.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end
